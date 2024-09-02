@@ -1,22 +1,26 @@
 body{
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-
-#container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: 500px;
-    width: 500px;
-    align-items: stretch;
-        
-}
-
-.box{
-    flex: 1 1 auto;
-    width: 100px;
-    border: 1px black solid;
+    margin-top: 100px;
     
 }
+
+
+
+
+#container{
+   display: grid;
+   grid-template-columns: repeat(16,1fr);
+   grid-template-rows: repeat(16,1fr);
+   height: 500px;
+   width: 500px;
+   border: black solid 1px;
+
+
+}
+
+#square{
+    border: solid black 1px;
+    display:flex;
+}
+
