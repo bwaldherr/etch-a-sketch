@@ -15,4 +15,12 @@ squares.addEventListener('mouseover', () =>{
 });
     });
 
+var btn = document.querySelector('button');
 
+btn.addEventListener('click',() => {
+    squares.forEach(squares  => {
+            squares.style.backgroundColor = 'white';
+        });
+            });
+        
+    
